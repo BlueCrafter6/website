@@ -1,0 +1,38 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(58, 58, 58);
+    font-size: x-large;
+    color: white;
+    text-decoration: none;
+}
+
+#top-line {
+    color: white;
+    position: relative;
+}
+
+p { 
+text-decoration: none;
+}
+
+.back-arrow {
+    width: 60px;
+    float: top;
+    height: 40px;
+}
+
+.back-arrow:hover {
+    transform: translateY(20%);
+    transition: ease-in-out all 250ms;
+    
+}
+
+#content-a {
+    text-decoration: none;
+    color: white;
+}
+
+#normal-a {
+    text-decoration: none;
+    color: rgb(5, 163, 255);
+}

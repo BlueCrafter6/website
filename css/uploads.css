@@ -1,0 +1,16 @@
+body {
+    background-color: rgb(58, 58, 58);
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.back-arrow {
+    width: 60px;
+    float: top;
+    height: 40px;
+}
+
+.back-arrow:hover {
+    transform: translateY(20%);
+    transition: ease-in-out all 250ms;
+}

@@ -1,0 +1,101 @@
+#abt-btn {
+    background-color: black;
+    border-radius: 12px;
+    width: 100px;
+    font: small-caps;
+    height: 50px;
+    font-family: 'Segoe UI';
+    font-size: medium;
+    border: 3px solid rgb(255, 145, 0);
+    font-weight: bolder;
+    color: rgb(255, 196, 0);
+}
+
+#abt-btn:hover {
+    transform: translateY(30%);
+    cursor: pointer;
+    color: rgb(238, 255, 0);
+    border: 3px solid rgb(238, 202, 0);
+    transition: all ease-in-out 500ms;
+}
+
+.btn-margin {
+    margin: auto;
+    margin-bottom: auto;
+    margin: 20%;
+}
+
+body {
+    background-color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+}
+
+#text {
+    color: azure;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+background-color: rgb(255, 153, 0);
+}
+
+.logo {
+    float: left;
+    padding: 10px 0;
+}
+
+nav {
+    float: right;
+}
+
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 23px;
+    position: relative;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+#gray {
+    color: gray;
+}
+
+nav a:hover {
+    color: #000;
+}
+
+nav a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    width: 100%;
+    background-color: #000;
+    position: absolute;
+    top: 0;
+    width: 0%;
+}
+
+nav a:hover::before {
+    width: 100%;
+    transition: all ease-in-out 250ms;
+}
