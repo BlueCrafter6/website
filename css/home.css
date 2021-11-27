@@ -18,7 +18,6 @@
   
   body::-webkit-scrollbar {
     width: 0.25rem;
-    display: none;
   }
   
   body::-webkit-scrollbar-track {
