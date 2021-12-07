@@ -47,3 +47,13 @@ body::-webkit-scrollbar {
   body::-webkit-scrollbar-thumb {
     background: #007fd3;
   }
+
+  #back-arrow {
+    width: 3rem;
+}
+
+#back-arrow:hover {
+    transform: translateY(10%);
+    transition: ease 200ms;
+    cursor: pointer;
+}
