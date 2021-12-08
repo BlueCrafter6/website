@@ -57,3 +57,7 @@ body::-webkit-scrollbar {
     transition: ease 200ms;
     cursor: pointer;
 }
+
+#insp-chnl:hover {
+  font-weight: 700;
+}
