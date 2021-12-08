@@ -195,3 +195,20 @@
     --bg-primary: #fdf6e3;
     --bg-secondary: #f5e5b8;
   }
+
+  #b2c-channel {
+width: 8rem;
+border-radius: 20px;
+height: 3rem;
+background: #000000;
+border-color: blue;
+color: white;
+  }
+
+  #b2c-channel:hover {
+    background: #1d6485;
+color: white;
+transition: ease-in-out 200ms;
+transform: translateY(10%);
+cursor: pointer;
+  }
