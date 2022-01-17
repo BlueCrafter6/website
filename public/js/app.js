@@ -61,3 +61,13 @@ function closeError() {
 }
 
 //___________________________________________________
+
+const youTubeMenu = doc.getElementById('menu')
+
+function showYouTubeMenu() {
+    youTubeMenu.style.display = 'block'
+}
+
+function hideYouTubeMenu() {
+    youTubeMenu.style.display = 'none'
+}
