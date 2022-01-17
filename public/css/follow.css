@@ -1,0 +1,183 @@
+:root {
+    --main-colour: #00a5ce;
+    --secondary-colour: #1f73ac;
+  }
+  
+  a {
+  text-decoration: none;
+  color: inherit;
+  }
+
+body {
+    margin: 0;
+    background: black;
+    color: white;
+    font-family: 'Segoe UI';
+}
+
+::-webkit-scrollbar {
+    width: 0.50rem;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: var(--main-colour);
+  }
+
+.navbar {
+    overflow: hidden;
+    background-color: #000000;
+  }
+  
+  .navbar a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .navbar a:hover {
+    background-color: #21b9e7;
+transition: ease-in-out 200ms;
+
+  }
+  
+  .navbar a.active {
+    background-color: var(--secondary-colour);
+    color: white;
+  }
+
+  #signin {
+    float: right;
+  }
+
+  #signin:hover {
+     cursor: pointer;
+  }
+
+  #signout {
+    float: right;
+    display: none;
+  }
+
+  #signout:hover {
+    cursor: pointer;
+  }
+
+  .username {
+    float: right;
+    padding: 5px;
+    display: none;
+  }
+
+  .error {
+    margin: auto;
+    width: 20%;
+    border: 2px solid red;
+    border-radius: 16px;
+    display: none;
+  }
+
+  .error svg {
+    width: 3rem;
+    color: red;
+    padding: 2px;
+  }
+
+  .error svg:hover {
+    transform: translateY(5%);
+    transition: ease-in-out 100ms;
+    cursor: pointer;
+  }
+
+  #close {
+    float: right;
+  }
+
+  .outbody {
+    margin: 1%;
+  }
+
+  .container {
+    margin: 1%;
+  }
+
+  main {
+      margin: 1%;
+  }
+
+.youtube {
+  margin-right: 10%;
+
+}
+
+  .youtubeicon {
+      width: 5rem;
+      color: #ff0000;
+  }
+
+  .youtubeicon:hover {
+      transform: translateY(5%);
+      transition: ease-in-out 100ms;
+      cursor: pointer;
+  }
+
+  .youtube #menu {
+    display: none;
+    background: rgb(70, 70, 70);
+    margin: auto;
+    width: 15%;
+    padding: 0px;
+  }
+
+  .youtube #menu p {
+    margin: 0;
+ }
+
+  .youtube #menu p:hover {
+    transition: ease-in-out 100ms;
+     text-decoration: underline;
+     background: #00a5ce;
+  }
+
+  .github {
+    margin-left: 10%;
+  }
+
+  .githubicon {
+    width: 5rem;
+  }
+
+  .githubicon:hover {
+    transform: translateY(5%);
+      transition: ease-in-out 100ms;
+  }
+
+  .discord {
+    margin-right: 10%;
+  }
+
+  .discordicon {
+    width: 5rem;
+    color: #5865F2;
+  }
+
+  .discordicon:hover {
+    transform: translateY(5%);
+      transition: ease-in-out 100ms;
+  }
+
+  .twitter {
+    margin-left: 10%;
+  }
+
+  .twittericon {
+    width: 5rem;
+    color: #1DA1F2;
+  }
+
+  .twittericon:hover {
+    transform: translateY(5%);
+      transition: ease-in-out 100ms;
+  }
