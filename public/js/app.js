@@ -71,3 +71,15 @@ function showYouTubeMenu() {
 function hideYouTubeMenu() {
     youTubeMenu.style.display = 'none'
 }
+
+//___________________________________________________
+
+const learnMoreCard = doc.getElementById('learnmore')
+
+function showLMCard() {
+    learnMoreCard.style.display = 'block'
+}
+
+function hideLMCard() {
+    learnMoreCard.style.display = 'none'
+}
