@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Awesome Project</title>
+<link rel="stylesheet" href="css/updates.css">
+<link rel="icon" href="img/normal_logo.ico">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="home.html">Home</a>
+        <a href="follow.html">Follow</a>
+        <a href="" class="active">Updates</a>
+        <a href="">About</a>
+        <a onclick="signOut()" id="signout">Sign Out</a>
+        <a onclick="showSignInField()" id="signin">Sign in</a>
+    </nav>
+    <div class="username" id="username">
+        <label for="userNameInput"><strong>Signed in as:</strong></label>
+<input type="text" id="userNameInput" maxlength="15">
+<input type="submit" value="Sign In" onclick="signIn()">
+<p>*This username will be checked for profanity</p>
+    </div>
+
+    <div class="error" id="error">       
+        <center>
+            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="circle-xmark" class="svg-inline--fa fa-circle-xmark" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" onclick="closeError()"><path fill="currentColor" d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256C397.4 512 512 397.4 512 256S397.4 0 256 0zM336.1 303c9.375 9.375 9.375 24.56 0 33.94c-9.381 9.381-24.56 9.373-33.94 0L256 289.9l-47.03 47.03c-9.381 9.381-24.56 9.373-33.94 0c-9.375-9.375-9.375-24.56 0-33.94l47.03-47.03L175 208.1c-9.375-9.375-9.375-24.56 0-33.94s24.56-9.375 33.94 0L256 222.1l47.03-47.03c9.375-9.375 24.56-9.375 33.94 0s9.375 24.56 0 33.94l-47.03 47.03L336.1 303z"></path></svg>
+            <h1>Error</h1>
+            <p id="errp"></p>
+        </center>
+    </div>
+    <main>
+        <h1>Updates</h1>
+        <ul>
+<li>Collab video comming soon</li>
+<li>There will be less uploads (<a href="#learnmore" onclick="showLMCard()">Learn More</a>)</li>
+        </ul>
+        <br>
+        <div id="learnmore">
+            <svg id="closelearn" style="cursor: pointer;" onclick="hideLMCard()" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="xmark" class="svg-inline--fa fa-xmark" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"></path></svg>
+<center>
+    <h1>Learn More</h1>
+    <h4>Why less uploads?</h4>
+    <p>Schools are now opening hence the reason for slower uploads</p>
+</center>
+        </div>
+    </main>
+    <script src="js/app.js"></script>
+</body>
+</html>
