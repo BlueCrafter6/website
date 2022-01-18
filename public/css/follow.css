@@ -95,16 +95,8 @@ transition: ease-in-out 200ms;
     float: right;
   }
 
-  .outbody {
-    margin: 1%;
-  }
-
-  .container {
-    margin: 1%;
-  }
-
   main {
-      margin: 1%;
+      margin: 0.5%;
   }
 
 .youtube {
