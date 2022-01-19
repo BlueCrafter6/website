@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About</title>
+<link rel="stylesheet" href="css/about.css">
+<link rel="icon" href="img/normal_logo.ico">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="" class="active">Home</a>
+        <a href="follow.html">Follow</a>
+        <a href="updates.html">Updates</a>
+        <a href="">About</a>
+        <a onclick="signOut()" id="signout">Sign Out</a>
+        <a onclick="showSignInField()" id="signin">Sign in</a>
+    </nav>
+    <div class="username" id="username">
+        <label for="userNameInput"><strong>Signed in as:</strong></label>
+<input type="text" id="userNameInput" maxlength="15">
+<input type="submit" value="Sign In" onclick="signIn()">
+<p>*This username will be checked for profanity</p>
+    </div>
+
+    <div class="error" id="error">       
+        <center>
+            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="circle-xmark" class="svg-inline--fa fa-circle-xmark" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" onclick="closeError()"><path fill="currentColor" d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256C397.4 512 512 397.4 512 256S397.4 0 256 0zM336.1 303c9.375 9.375 9.375 24.56 0 33.94c-9.381 9.381-24.56 9.373-33.94 0L256 289.9l-47.03 47.03c-9.381 9.381-24.56 9.373-33.94 0c-9.375-9.375-9.375-24.56 0-33.94l47.03-47.03L175 208.1c-9.375-9.375-9.375-24.56 0-33.94s24.56-9.375 33.94 0L256 222.1l47.03-47.03c9.375-9.375 24.56-9.375 33.94 0s9.375 24.56 0 33.94l-47.03 47.03L336.1 303z"></path></svg>
+            <h1>Error</h1>
+            <p id="errp"></p>
+        </center>
+    </div>
+
+<main>
+    <h1>About Blue Crafter</h1>
+    <p>Learn everything about the channels history</p>
+
+    <ul class="navigation">
+        <li>How I started</li>
+        <li>Where I am today</li>
+        <li>My Inspirations</li>
+    </ul>
+
+    <h1>How I started</h1>
+    <p>It was 2020 and I was bored and stuck in my house with nothing to do. Then, I was watching some videos on YouTube and idea popped in my mind<br><center><em>"Why don't I become a YouTuber?"</em></center><br>I started off in the spare room of my house with my phone being held up with cupboard pulling things recording a TV with my tablets screen on it. That wasn't working out so I went to my dad for some advice. He told me to use a screen recorder.<br><center>Remember:<br>I knew NOTHING about screen recorders and stuff like that</center><br>Then I shot a couple of EXTREMELY BAD videos. Then I asked my uncles for some advice, they told me that I should use an editor. I looked for one and fell in love with it immediatly. I was then ready to publish videos to YouTube (well not yet). I made some videos and one day I asked my dad if I can publish one and he said yes. I got so excited and went to my tablet to film a video. I hopped onto YouTube Studio and uploaded it there. This was my first video. It got a decent amount of views over the weeks and I uploaded video after video. For my birthday in May, I got an Arduino kit. This was when I made my second channel. Check that story out here.
+</p>
+<!--TODO: Added anchors and other fields-->
+</main>
+    <script src="js/app.js"></script>
+</body>
+</html>
