@@ -117,3 +117,16 @@
           font-weight: 700;
           transition: ease-in-out 100ms;
       }
+
+      #quote:hover:after {
+        content: ' - Blue Crafter 2020';
+        opacity: 0.5;
+      }
+
+      #first-vid {
+        color: #3ab0ff;
+      }
+
+      #blue2c-abt {
+        color: #00a5ce;
+      }
