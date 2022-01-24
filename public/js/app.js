@@ -83,3 +83,63 @@ function showLMCard() {
 function hideLMCard() {
     learnMoreCard.style.display = 'none'
 }
+
+//____________________________________________________
+
+function counter(id, start, end, duration) {
+    let obj = document.getElementById(id),
+     current = start,
+     range = end - start,
+     increment = end > start ? 1 : -1,
+     step = Math.abs(Math.floor(duration / range)),
+     timer = setInterval(() => {
+      current += increment;
+      obj.textContent = current;
+      if (current == end) {
+       clearInterval(timer);
+      }
+     }, step);
+   }
+
+const APIKey = "AIzaSyCdx9GPicMygoA5NqNETPNFQDYUa0NGLaU";
+const youTubeChannelId = "UCukZHqeKLdBfdyEPgZ4OcBA";
+const outputElement = doc.querySelector('#sub-count');
+const outputElement1 = doc.querySelector('#video-count')
+const outputElement2 = doc.querySelector('#view-count')
+
+async function getYouTubeSubs() {
+    const getData = await axios.get(`https://www.googleapis.com/youtube/v3/channels?part=statistics&id=${youTubeChannelId}&key=${APIKey}`)
+
+    const subCount = getData.data.items[0].statistics.subscriberCount
+
+    console.log(getData)
+
+    outputElement.textContent = counter("sub-count", 0, subCount, 2000)
+}
+
+async function getYouTubeVids() {
+    const getData = await axios.get(`https://www.googleapis.com/youtube/v3/channels?part=statistics&id=${youTubeChannelId}&key=${APIKey}`)
+
+    const vidCount = getData.data.items[0].statistics.videoCount
+    
+
+    outputElement1.textContent = counter("video-count", 0, vidCount, 2000)
+}
+
+async function getChannelViews() {
+    const getData = await axios.get(`https://www.googleapis.com/youtube/v3/channels?part=statistics&id=${youTubeChannelId}&key=${APIKey}`)
+
+    const viewCount = getData.data.items[0].statistics.viewCount
+    
+
+    outputElement2.textContent = counter("view-count", 0, viewCount, 2000)
+}
+
+getYouTubeSubs() && getYouTubeVids() && getChannelViews();
+
+/*
+hiddenSubscriberCount: false
+subscriberCount: "41"
+videoCount: "38"
+viewCount: "1577"
+*/

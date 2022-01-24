@@ -130,3 +130,19 @@
       #blue2c-abt {
         color: #00a5ce;
       }
+
+      .inspiration {
+        list-style-type: square;
+        width: 11%;
+        border: 3px solid var(--secondary-colour);
+        border-radius: 16px;
+      }
+
+      .inspiration li:hover {
+        font-weight: 700;
+        transition: ease-in-out 100ms;
+      }
+
+      .inspiration li::marker {
+        color: var(--secondary-colour);
+      }
