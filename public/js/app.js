@@ -114,7 +114,7 @@ async function getYouTubeSubs() {
 
     console.log(getData)
 
-    outputElement.textContent = counter("sub-count", 0, subCount, 2000)
+    outputElement.textContent = counter("sub-count", 0, subCount, 500)
 }
 
 async function getYouTubeVids() {
@@ -123,7 +123,7 @@ async function getYouTubeVids() {
     const vidCount = getData.data.items[0].statistics.videoCount
     
 
-    outputElement1.textContent = counter("video-count", 0, vidCount, 2000)
+    outputElement1.textContent = counter("video-count", 0, vidCount, 500)
 }
 
 async function getChannelViews() {
@@ -132,7 +132,7 @@ async function getChannelViews() {
     const viewCount = getData.data.items[0].statistics.viewCount
     
 
-    outputElement2.textContent = counter("view-count", 0, viewCount, 2000)
+    outputElement2.textContent = counter("view-count", 0, viewCount, 200)
 }
 
 getYouTubeSubs() && getYouTubeVids() && getChannelViews();
