@@ -1,6 +1,6 @@
 const doc = document;
 var profanity = [
-    "ass", "shit", "fuck", "dick", "bitch"
+    "ass", "shit", "fuck", "dick", "bitch", "kant"
 ]
 var censor = ("*******")
   ;
