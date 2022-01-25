@@ -111,3 +111,23 @@ transition: ease-in-out 200ms;
   #close {
     float: right;
   }
+
+
+#sun {
+  width: 20px;
+  margin-top: 2px;
+}
+
+#moon {
+  width: 20px;
+  margin-top: 2px;
+}
+
+#moona {
+  display: none;
+}
+
+.darkmode {
+  background: white;
+  color: #000000;
+}

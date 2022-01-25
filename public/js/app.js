@@ -143,3 +143,20 @@ subscriberCount: "41"
 videoCount: "38"
 viewCount: "1577"
 */
+
+//__________________________________________________________
+
+const sun = doc.querySelector('#suna')
+const moon = doc.querySelector('#moona')
+
+function toggle() {
+    doc.body.classList.toggle("darkmode")
+    sun.style.display = 'none'
+    moon.style.display = 'block'
+}
+
+function toggle1() {
+    doc.body.classList.toggle("darkmode")
+    sun.style.display = 'block'
+    moon.style.display = 'none'
+}
