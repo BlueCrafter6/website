@@ -130,4 +130,5 @@ transition: ease-in-out 200ms;
 .darkmode {
   background: white;
   color: #000000;
+  transition: ease-in-out 100ms;
 }
