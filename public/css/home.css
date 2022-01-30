@@ -12,27 +12,26 @@ body {
     background: black;
     color: white;
     margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI';
   }
 
 .navbar {
     overflow: hidden;
-    background-color: #000000;
   }
   
   .navbar a {
     float: left;
-    color: #f2f2f2;
+    color: inherit;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 1.3rem;
   }
   
   .navbar a:hover {
     background-color: #21b9e7;
 transition: ease-in-out 200ms;
-
+cursor: pointer;
   }
   
   .navbar a.active {
@@ -130,5 +129,5 @@ transition: ease-in-out 200ms;
 .darkmode {
   background: white;
   color: #000000;
-  transition: ease-in-out 100ms;
+  transition: ease-in-out 200ms;
 }

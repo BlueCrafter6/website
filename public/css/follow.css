@@ -25,16 +25,14 @@ body {
 
 .navbar {
     overflow: hidden;
-    background-color: #000000;
   }
   
   .navbar a {
     float: left;
-    color: #f2f2f2;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 1.3rem;
   }
   
   .navbar a:hover {
@@ -172,4 +170,24 @@ transition: ease-in-out 200ms;
   .twittericon:hover {
     transform: translateY(5%);
       transition: ease-in-out 100ms;
+  }
+
+  #sun {
+    width: 20px;
+    margin-top: 2px;
+  }
+  
+  #moon {
+    width: 20px;
+    margin-top: 2px;
+  }
+  
+  #moona {
+    display: none;
+  }
+  
+  .darkmode {
+    background: white;
+    color: #000000;
+    transition: ease-in-out 200ms;
   }
