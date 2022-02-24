@@ -43,6 +43,15 @@ cursor: pointer;
     float: right;
     padding: 5px;
     display: none;
+    line-height: 5px;
+  }
+
+  .readtext {
+    color: #1f73ac;
+  }
+
+  .readtext:hover {
+    text-decoration: underline;
   }
 
   main {
@@ -76,6 +85,12 @@ cursor: pointer;
 
   #signin:hover {
      cursor: pointer;
+  }
+
+  #userNameInput {
+    border: 5px solid #1f73ac;
+    border-radius: 16px;
+    padding: 5px;
   }
 
   #signout {

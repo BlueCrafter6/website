@@ -19,11 +19,13 @@
         <a onclick="signOut()" id="signout">Sign Out</a>
         <a onclick="showSignInField()" id="signin">Sign in</a>
     </nav>
+    <!--  Functions: toggle; toggle1; signOut; showSignInField -->
     <div class="username" id="username">
         <label for="userNameInput"><strong>Signed in as:</strong></label>
-<input type="text" id="userNameInput" maxlength="15">
+<input type="text" id="userNameInput" maxlength="15" autocomplete="off"  placeholder="Enter in your own username">
 <input type="submit" value="Sign In" onclick="signIn()">
 <p>*This username will be checked for profanity</p>
+<p><a class="readtext" href="">Read up on how this thing works</a></p>
     </div>
 
     <div class="error" id="error">       
