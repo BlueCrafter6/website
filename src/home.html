@@ -7,6 +7,7 @@
     <title>Home | Blue Crafter</title>
     <link rel="stylesheet" href="css/home.css">
 <link rel="shortcut icon" href="img/normal_logo.ico" type="image/x-icon">
+<script defer src="app.js"></script>
 </head>
 <body>
     <nav class="navbar">
@@ -19,13 +20,12 @@
         <a onclick="signOut()" id="signout">Sign Out</a>
         <a onclick="showSignInField()" id="signin">Sign in</a>
     </nav>
-    <!--  Functions: toggle; toggle1; signOut; showSignInField -->
     <div class="username" id="username">
         <label for="userNameInput"><strong>Signed in as:</strong></label>
 <input type="text" id="userNameInput" maxlength="15" autocomplete="off"  placeholder="Enter in your own username">
 <input type="submit" value="Sign In" onclick="signIn()">
 <p>*This username will be checked for profanity</p>
-<p><a class="readtext" href="">Read up on how this thing works</a></p>
+<p><a class="readtext" href="signin/how-it-works.html">Read up on how this thing works</a></p>
     </div>
 
     <div class="error" id="error">       
@@ -47,6 +47,5 @@
     <h1>Latest Video</h1>
     <iframe width="1250" height="720" src="https://www.youtube.com/embed/kJQ6EZr92BI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </main>
-<script src="js/app.js"></script>
 </body>
 </html>
