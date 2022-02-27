@@ -159,8 +159,32 @@
         display: none;
       }
       
-      .darkmode {
-        background: white;
+      .lightmode {
+        background: #ffffff;
         color: #000000;
         transition: ease-in-out 200ms;
       }
+
+  @media (max-width: 1107px) {
+    /*All screens that cant see inspiration border*/
+        .inspiration {
+          border: none;
+        }
+      }
+
+      @media (max-width: 820px) {
+        /*All screens that cant see navigation background*/
+        .navigation {
+          width: 100px;
+        }
+      }
+
+@media (max-width: 286px) {
+  #signin {
+    float: left;
+  }
+
+  .error {
+    width: 200px;
+  }
+}
