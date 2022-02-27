@@ -26,6 +26,7 @@ const errp = doc.getElementById('errp');
   
 function showSignInField() {
     signInDiv.style.display = 'block';
+    return
 }
 
 function signIn() {
@@ -112,8 +113,6 @@ async function getYouTubeSubs() {
 
     const subCount = getData.data.items[0].statistics.subscriberCount
 
-    console.log(getData)
-
     outputElement.textContent = counter("sub-count", 0, subCount, 500)
 }
 
@@ -149,14 +148,17 @@ viewCount: "1577"
 const sun = doc.querySelector('#suna')
 const moon = doc.querySelector('#moona')
 
-function toggle() {
-    doc.body.classList.toggle("darkmode")
+function toggleA() {
+    doc.body.classList.toggle("lightmode")
     sun.style.display = 'none'
     moon.style.display = 'block'
 }
 
-function toggle1() {
-    doc.body.classList.toggle("darkmode")
+function toggleB() {
+    doc.body.classList.toggle("lightmode")
     sun.style.display = 'block'
     moon.style.display = 'none'
 }
+
+// _________________________________________________________
+
