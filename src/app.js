@@ -129,8 +129,6 @@ async function getChannelViews() {
     const getData = await axios.get(`https://www.googleapis.com/youtube/v3/channels?part=statistics&id=${youTubeChannelId}&key=${APIKey}`)
 
     const viewCount = getData.data.items[0].statistics.viewCount
-    
-
     outputElement2.textContent = counter("view-count", 0, viewCount, 200)
 }
 
@@ -149,16 +147,15 @@ const sun = doc.querySelector('#suna')
 const moon = doc.querySelector('#moona')
 
 function toggleA() {
-    doc.body.classList.toggle("lightmode")
+    doc.body.classList.toggle("darkmode")
     sun.style.display = 'none'
     moon.style.display = 'block'
 }
 
 function toggleB() {
-    doc.body.classList.toggle("lightmode")
+    doc.body.classList.toggle("darkmode")
     sun.style.display = 'block'
     moon.style.display = 'none'
 }
 
 // _________________________________________________________
-

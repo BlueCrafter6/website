@@ -191,3 +191,9 @@ transition: ease-in-out 200ms;
     color: #000000;
     transition: ease-in-out 200ms;
   }
+
+  @media (max-width: 286px) {
+    #signin {
+      float: left;
+    }
+  }

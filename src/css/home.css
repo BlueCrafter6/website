@@ -66,11 +66,6 @@ cursor: pointer;
     background: var(--main-colour);
   }
 
-  iframe {
-    border-radius: 20px;
-    border: 4px solid var(--secondary-colour);
-  }
-
   .outbody {
     margin: 1%;
   }
@@ -145,4 +140,8 @@ cursor: pointer;
   background: white;
   color: #000000;
   transition: ease-in-out 200ms;
+}
+
+#sub-count, #view-count, #video-count {
+  display: none;
 }
