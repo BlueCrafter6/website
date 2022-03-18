@@ -8,6 +8,12 @@ text-decoration: none;
 color: inherit;
 }
 
+.darkmode {
+  background: white;
+  color: #000000;
+  transition: ease-in-out 200ms;
+}
+
 body {
     background: black;
     color: white;
@@ -15,43 +21,46 @@ body {
     font-family: 'Segoe UI';
   }
 
-.navbar {
-    overflow: hidden;
-  }
-  
-  .navbar a {
-    float: left;
-    color: inherit;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 1.3rem;
-  }
-  
-  .navbar a:hover {
-    background-color: #21b9e7;
-transition: ease-in-out 200ms;
-cursor: pointer;
-  }
-  
-  .navbar a.active {
-    background-color: var(--secondary-colour);
-    color: white;
-  }
-
-  .username {
+  .nav__links {
+    list-style: none;
+    display: flex;
     float: right;
-    padding: 5px;
-    display: none;
-    line-height: 5px;
   }
-
-  .readtext {
-    color: #1f73ac;
+  
+  .nav__links a,
+  .cta,
+  .overlay__content a {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+    cursor: pointer;
   }
-
-  .readtext:hover {
-    text-decoration: underline;
+  
+  .nav__links li {
+    padding: 0px 20px;
+  }
+  
+  .nav__links li a {
+    transition: all 0.3s ease 0s;
+  }
+  
+  .nav__links li a:hover {
+    color: #0088a9;
+  }
+  
+  .current {
+    margin-left: 20px;
+    padding: 9px 25px;
+    background-color: rgba(0, 136, 169, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    color: #ffffff;
+  }
+  
+  .current:hover {
+    background-color: rgba(0, 136, 169, 0.8);
   }
 
   main {
@@ -74,53 +83,6 @@ cursor: pointer;
     margin: 1%;
   }
 
-  #signin {
-    float: right;
-  }
-
-  #signin:hover {
-     cursor: pointer;
-  }
-
-  #userNameInput {
-    border: 5px solid #1f73ac;
-    border-radius: 16px;
-    padding: 5px;
-  }
-
-  #signout {
-    float: right;
-    display: none;
-  }
-
-  #signout:hover {
-    cursor: pointer;
-  }
-
-  .error {
-    margin: auto;
-    width: 20%;
-    border: 2px solid red;
-    border-radius: 16px;
-    display: none;
-  }
-
-  .error svg {
-    width: 3rem;
-    color: red;
-    padding: 2px;
-  }
-
-  .error svg:hover {
-    transform: translateY(5%);
-    transition: ease-in-out 100ms;
-    cursor: pointer;
-  }
-
-  #close {
-    float: right;
-  }
-
 
 #sun {
   width: 20px;
@@ -134,12 +96,6 @@ cursor: pointer;
 
 #moona {
   display: none;
-}
-
-.darkmode {
-  background: white;
-  color: #000000;
-  transition: ease-in-out 200ms;
 }
 
 #sub-count, #view-count, #video-count {

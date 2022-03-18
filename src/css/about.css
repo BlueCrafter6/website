@@ -15,33 +15,46 @@
       font-family: 'Segoe UI';
     }
   
-  .navbar {
-      overflow: hidden;
-    }
-    
-    .navbar a {
-      float: left;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-      font-size: 1.3rem;
-    }
-    
-    .navbar a:hover {
-      background-color: #21b9e7;
-  transition: ease-in-out 200ms;
-  
-    }
-    
-    .navbar a.active {
-      background-color: var(--secondary-colour);
-      color: white;
-    }
-  
-    .username {
+    .nav__links {
+      list-style: none;
+      display: flex;
       float: right;
-      padding: 5px;
-      display: none;
+    }
+    
+    .nav__links a,
+    .cta,
+    .overlay__content a {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 500;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    
+    .nav__links li {
+      padding: 0px 20px;
+    }
+    
+    .nav__links li a {
+      transition: all 0.3s ease 0s;
+    }
+    
+    .nav__links li a:hover {
+      color: #0088a9;
+    }
+    
+    .current {
+      margin-left: 20px;
+      padding: 9px 25px;
+      background-color: rgba(0, 136, 169, 1);
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: all 0.3s ease 0s;
+      color: #ffffff;
+    }
+    
+    .current:hover {
+      background-color: rgba(0, 136, 169, 0.8);
     }
   
     main {
@@ -62,47 +75,6 @@
     
       .container {
         margin: 1%;
-      }
-    
-      #signin {
-        float: right;
-      }
-    
-      #signin:hover {
-         cursor: pointer;
-      }
-    
-      #signout {
-        float: right;
-        display: none;
-      }
-    
-      #signout:hover {
-        cursor: pointer;
-      }
-    
-      .error {
-        margin: auto;
-        width: 20%;
-        border: 2px solid red;
-        border-radius: 16px;
-        display: none;
-      }
-    
-      .error svg {
-        width: 3rem;
-        color: red;
-        padding: 2px;
-      }
-    
-      .error svg:hover {
-        transform: translateY(5%);
-        transition: ease-in-out 100ms;
-        cursor: pointer;
-      }
-    
-      #close {
-        float: right;
       }
 
       .navigation {
@@ -178,13 +150,3 @@
           width: 100px;
         }
       }
-
-@media (max-width: 286px) {
-  #signin {
-    float: left;
-  }
-
-  .error {
-    width: 200px;
-  }
-}

@@ -2,11 +2,11 @@
     --main-colour: #00a5ce;
     --secondary-colour: #1f73ac;
   }
-  
-  a {
-  text-decoration: none;
-  color: inherit;
-  }
+
+a {
+text-decoration: none;
+color: inherit;
+}
 
 body {
     margin: 0;
@@ -23,74 +23,46 @@ body {
     background: var(--main-colour);
   }
 
-.navbar {
-    overflow: hidden;
+  .nav__links {
+    list-style: none;
+    display: flex;
+    float: right;
   }
   
-  .navbar a {
-    float: left;
-    text-align: center;
-    padding: 14px 16px;
+  .nav__links a,
+  .cta,
+  .overlay__content a {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
     text-decoration: none;
-    font-size: 1.3rem;
-  }
-  
-  .navbar a:hover {
-    background-color: #21b9e7;
-transition: ease-in-out 200ms;
-
-  }
-  
-  .navbar a.active {
-    background-color: var(--secondary-colour);
-    color: white;
-  }
-
-  #signin {
-    float: right;
-  }
-
-  #signin:hover {
-     cursor: pointer;
-  }
-
-  #signout {
-    float: right;
-    display: none;
-  }
-
-  #signout:hover {
     cursor: pointer;
   }
-
-  .username {
-    float: right;
-    padding: 5px;
-    display: none;
+  
+  .nav__links li {
+    padding: 0px 20px;
   }
-
-  .error {
-    margin: auto;
-    width: 20%;
-    border: 2px solid red;
-    border-radius: 16px;
-    display: none;
+  
+  .nav__links li a {
+    transition: all 0.3s ease 0s;
   }
-
-  .error svg {
-    width: 3rem;
-    color: red;
-    padding: 2px;
+  
+  .nav__links li a:hover {
+    color: #0088a9;
   }
-
-  .error svg:hover {
-    transform: translateY(5%);
-    transition: ease-in-out 100ms;
+  
+  .current {
+    margin-left: 20px;
+    padding: 9px 25px;
+    background-color: rgba(0, 136, 169, 1);
+    border: none;
+    border-radius: 50px;
     cursor: pointer;
+    transition: all 0.3s ease 0s;
+    color: #ffffff;
   }
-
-  #close {
-    float: right;
+  
+  .current:hover {
+    background-color: rgba(0, 136, 169, 0.8);
   }
 
   .outbody {
@@ -118,10 +90,6 @@ transition: ease-in-out 200ms;
       float: right;
       padding: 2px;
       color: red;
-  }
-
-  li a {
-      color: cadetblue;
   }
 
   #sun {
