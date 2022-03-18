@@ -131,7 +131,7 @@
         display: none;
       }
       
-      .lightmode {
+      .darkmode {
         background: #ffffff;
         color: #000000;
         transition: ease-in-out 200ms;
