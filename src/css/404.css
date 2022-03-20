@@ -1,0 +1,14 @@
+body {
+    background: #000000;
+    color: #ffffff;
+    font-family: 'Segoe UI';
+}
+
+.err {
+    width: 30%;
+    margin: auto;
+    background: #555555;
+    border-radius: 16px;
+    line-height: 25px;
+    padding: 2px;
+}
