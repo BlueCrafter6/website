@@ -1,5 +1,9 @@
 const doc = document;
-var profanity = [
+const sleep = (ms) => {
+    return new Promise(r => setTimeout(r, ms))
+  }
+
+let profanity = [
     "ass", "shit", "fuck", "dick", "bitch", "kant"
 ]
 var censor = ("*******")
@@ -85,8 +89,10 @@ viewCount: "1577"
 
 //__________________________________________________________
 
-const sun = doc.querySelector('#suna')
-const moon = doc.querySelector('#moona')
+const sun = doc.getElementById('sun_a')
+const moon = doc.getElementById('moon_a')
+const sunMobile = doc.getElementById('sun_a_mobile')
+const moonMobile = doc.getElementById('moon_a_mobile')
 
 function toggleA() {
     doc.body.classList.toggle("darkmode")
@@ -100,4 +106,17 @@ function toggleB() {
     moon.style.display = 'none'
 }
 
+function toggleAM() {
+    doc.body.classList.toggle("darkmode")
+    sunMobile.style.display = 'none'
+    moonMobile.style.display = 'block'
+}
+
+function toggleBM() {
+    doc.body.classList.toggle("darkmode")
+    sunMobile.style.display = 'block'
+    moonMobile.style.display = 'none'
+}
+
 // _________________________________________________________
+

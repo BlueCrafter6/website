@@ -64,8 +64,58 @@ body {
     background-color: rgba(0, 136, 169, 0.8);
   }
 
+  .nav__links__mobile {
+    list-style: none;
+    float: right;
+    display: none;
+    padding-left: 100%;
+  }
+  
+  .nav__links__mobile a,
+  .overlay__content a {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .nav__links__mobile li {
+    padding: 0px 20px 5px;
+  }
+  
+  .nav__links__mobile li a {
+    transition: all 0.3s ease 0s;
+  }
+  
+  .nav__links__mobile li a:hover {
+    color: #0088a9;
+  }
+
+  .current_mobile {
+    background: #0088a9;
+    padding: 3px;
+  }
+
+  #sun {
+    width: 20px;
+    margin-top: 2px;
+  }
+  
+  #moon {
+    width: 20px;
+    margin-top: 2px;
+  }
+  
+  #moon_a {
+    display: none;
+  }
+
+  #moon_a_mobile {
+    display: none;
+  }
+
   main {
-      margin: 0.5%;
+      margin: 1%;
   }
 
 .youtube {
@@ -144,20 +194,6 @@ body {
     transform: translateY(5%);
       transition: ease-in-out 100ms;
   }
-
-  #sun {
-    width: 20px;
-    margin-top: 2px;
-  }
-  
-  #moon {
-    width: 20px;
-    margin-top: 2px;
-  }
-  
-  #moona {
-    display: none;
-  }
   
   .darkmode {
     background: white;
@@ -165,8 +201,12 @@ body {
     transition: ease-in-out 200ms;
   }
 
-  @media (max-width: 286px) {
-    #signin {
-      float: left;
+  @media (max-width: 511px) { /*Navbar*/
+    .nav__links {
+      display: none;
+    }
+  
+    .nav__links__mobile {
+      display: block;
     }
   }

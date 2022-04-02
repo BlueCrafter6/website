@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | Blue Crafter</title>
     <link rel="stylesheet" href="css/home.css">
-    <link rel="shortcut icon" href="img/normal_logo.ico" type="image/x-icon">
+    <link rel="icon" href="img/normal_logo.ico" type="image/x-icon">
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.25.0/axios.min.js"
         integrity="sha512-/Q6t3CASm04EliI1QyIDAA/nDo9R8FQ/BULoUFyN4n/BDdyIxeH7u++Z+eobdmr11gG5D/6nPFyDlnisDwhpYA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -25,12 +25,22 @@
                 <li><a href="updates">Updates</a></li>
                 <li><a href="about">About</a></li>
                 <div>
-                    <li><a onclick="toggleA()" id="suna"><i class="fa-solid fa-sun"></i> Light Mode</a></li>
-                    <li><a onclick="toggleB()" id="moona"><i class="fa-solid fa-moon"></i> Dark Mode</a></li>
+                    <li><a onclick="toggleA()" id="sun_a"><i class="fa-solid fa-sun"></i> Light Mode</a></li>
+                    <li><a onclick="toggleB()" id="moon_a"><i class="fa-solid fa-moon"></i> Dark Mode</a></li>
+                </div>
+            </ul>
+            <ul class="nav__links__mobile">
+                <li><a href="" class="current_mobile"><b>Home</b></a></li>
+                <li><a href="follow">Follow</a></li>
+                <li><a href="updates">Updates</a></li>
+                <li><a href="about">About</a></li>
+                <div>
+                    <li><a onclick="toggleAM()" id="sun_a_mobile"><i class="fa-solid fa-sun"></i></a></li>
+                    <li><a onclick="toggleBM()" id="moon_a_mobile"><i class="fa-solid fa-moon"></i></a></li>
                 </div>
             </ul>
     </nav>
-    <br><br><br>
+    <br><br><br><br>
     <main>
 
         <center>
