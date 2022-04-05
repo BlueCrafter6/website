@@ -201,7 +201,7 @@ body {
     transition: ease-in-out 200ms;
   }
 
-  @media (max-width: 511px) { /*Navbar*/
+  @media (max-width: 591px) { /*Navbar*/
     .nav__links {
       display: none;
     }

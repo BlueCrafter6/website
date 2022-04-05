@@ -97,7 +97,7 @@
     }
   
     main {
-        margin-left: 0.5%;
+        margin: 1%;
     }  
   
     ::-webkit-scrollbar {
@@ -154,7 +154,7 @@
         transition: ease-in-out 200ms;
       }
 
-      @media (max-width: 511px) { /*Navbar*/
+      @media (max-width: 590px) { /*Navbar*/
         .nav__links {
           display: none;
         }
