@@ -125,10 +125,6 @@ main {
   text-decoration: underline;
 }
 
-.picture {
-  width: 550px;
-}
-
 @media (max-width: 590px) { /*Navbar*/
   .nav__links {
     display: none;

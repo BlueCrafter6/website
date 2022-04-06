@@ -110,6 +110,10 @@ body {
   text-decoration: underline;
 }
 
+.picture {
+  width: 500px;
+}
+
 @media (max-width: 511px) { /*Navbar*/
   .nav__links {
     display: none;
@@ -117,5 +121,17 @@ body {
 
   .nav__links__mobile {
     display: block;
+  }
+}
+
+@media (max-width: 800px) {
+  .picture {
+    width: 25em;
+  }
+}
+
+@media (max-width: 400px) {
+  .picture {
+    width: 15em;
   }
 }
