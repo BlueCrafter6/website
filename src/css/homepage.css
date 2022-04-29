@@ -1,0 +1,122 @@
+body {
+    font-family: "Segoe UI";
+    background: #000000;
+    color: #ffffff;
+}
+
+a {
+text-decoration: none;
+color: inherit;
+}
+
+.time {
+    font-family: Courier;
+    padding: 8px;
+    border-radius: 16px;
+    color: #ffffff;
+border: 3px solid #ffffff;
+
+}
+
+.time:hover {
+    color: #000000;
+    transition: ease-in-out 200ms;
+    cursor: pointer;
+    background: #ffffff;
+    font-weight: 700;
+}
+
+.center {
+    text-align: -webkit-center;
+}
+
+/************************************************/
+
+#search {
+    border: 3px solid #ffffff;
+border-radius: 5px;
+}
+
+.submit {
+    border: none;
+    padding: 6px;
+    width: 60px;
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+.disabled {
+    color: #9c9c9c;
+    background: #484848;
+    cursor: not-allowed;
+}
+
+.err {
+    display: none;
+    color: #ff0000;
+}
+
+/************************************************/
+
+.id__wrong {
+    border: 3px solid #fff;
+    width: 20rem;
+    padding: 10px;
+    margin: 0;
+    border-radius: 16px;
+}   
+
+.fa-id-card {
+    margin-left: 40px;
+}
+
+/************************************************/
+
+video {
+    border-radius: 50px;
+}
+
+.border_radius_none {
+    border-radius: 0;
+    transition: ease 1s;
+}
+
+.video__button {
+    border: none;
+    padding: 6px;
+    border-radius: 10px;
+    background: #2BC6A9;
+}
+.video__button:hover {
+    cursor: pointer;
+    transition: ease-in-out 100ms;
+    border: 3px solid #126e5d;
+}
+
+.fa-pause,
+.fa-play {
+    font-size: 20px;
+    transition: ease 1s;
+}
+
+#pause:hover i {
+    transform: rotate(20deg);
+    opacity: 0.7;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/************************************************/
+
+@media (max-width: 485px) {
+    video {
+        width: 20em;
+    }
+}
