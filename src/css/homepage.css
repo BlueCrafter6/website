@@ -74,6 +74,7 @@ border-radius: 5px;
 
 video {
     border-radius: 50px;
+    border: 5px solid #126e5d;
 }
 
 .border_radius_none {
