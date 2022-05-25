@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Redirect | YouTube</title>
+<link rel="stylesheet" href="css/global.css">
+<link rel="icon" href="img/loading.svg">
+<script defer src="js/global.js"></script>
+<script src="../js/fa.js"></script>
+</head>
+<body>
+<div class="center line__short">
+    <img src="img/loading.svg">
+    <h1>Redirecting&hellip;</h1>
+    <p><i class="fa-brands fa-youtube"></i> YouTube</p>
+</div>
+<script async>
+    const sleep = (ms) => {
+        return new Promise(r => setTimeout(r, ms))
+    }
+window.onload = async function() {
+await sleep(500)
+window.location = "https://www.youtube.com/channel/UCukZHqeKLdBfdyEPgZ4OcBA"
+}
+</script>
+</body>
+</html>

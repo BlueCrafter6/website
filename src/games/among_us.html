@@ -4,51 +4,35 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Games > Among Us | Blue Crafter</title>
-<link rel="stylesheet" href="../css/amongus.css">
+<title>Among Us | Blue Crafter Website</title>
+<link rel="stylesheet" href="css/among_us.css">
 <link rel="icon" href="../img/normal_logo.ico">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
-        integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer">
-<script defer src="../app.js"></script>
-    </head>
+<script src="../js/fa.js"></script>
+<script defer src="../js/app.js"></script>
+</head>
 <body>
     <nav>
-        <ul class="nav__links">
-            <li><a href="../games"><i class="fa-solid fa-angle-left"></i> Back</a></li>
-            <li><a href="../home">Home</a></li>
-            <li><a href="../follow">Follow</a></li>
-            <li><a href="../updates">Updates</a></li>
-            <li><a href="../about">About</a></li>
-            <li><a href="../games" class="current">Games</a></li>
-            <div>
-                <li><a onclick="toggleA()" id="sun_a"><i class="fa-solid fa-sun"></i> Light Mode</a></li>
-                <li><a onclick="toggleB()" id="moon_a"><i class="fa-solid fa-moon"></i> Dark Mode</a></li>
-            </div>
+        <ul class="nav__ul">
+            <li class="nav__li"><a href="../index" class="nav__a">Home</a></li>
+            <li class="nav__li"><a href="../follow" class="nav__a">Follow</a></li>
+            <li class="nav__li"><a href="../updates" class="nav__a">Updates</a></li>
+            <li class="nav__li"><a href="../about" class="nav__a">About</a></li>
+            <li class="nav__li"><a href="#" class="nav__a current">Games > ...</a></li>
+            <li class="nav__li sun"><a href="#" class="nav__a" onclick="lightMode()"><i class="fa-solid fa-sun"></i></a></li>
+            <li class="nav__li moon"><a href="#" class="nav__a" onclick="darkMode()"><i class="fa-solid fa-moon"></i></a></li>
         </ul>
-        <ul class="nav__links__mobile">
-            <li><a href="../games"><i class="fa-solid fa-angle-left"></i> Back</a></li>
-            <li><a href="../home">Home</a></li>
-            <li><a href="../follow">Follow</a></li>
-            <li><a href="../updates">Updates</a></li>
-            <li><a href="../about">About</a></li>
-            <li><a href="../games" class="current_mobile"><b>Games</b></a></li>
-            <div>
-                <li><a onclick="toggleAM()" id="sun_a_mobile"><i class="fa-solid fa-sun"></i></a></li>
-                <li><a onclick="toggleBM()" id="moon_a_mobile"><i class="fa-solid fa-moon"></i></a></li>
-            </div>
-        </ul>
-</nav>
-<br><br><br>
-<main>
-    <center>
-        <h1>What do you want to view from this category?</h1>
-        <ul class="options">
-            <li><a href="among_us/shift_n_seek">Shift-n-seek</a></li>
-            <li><a href="among_us/hide_n_seek">Hide-n-seek</a></li>
-        </ul>
-        <img src="../img/amongus_1.jpg" class="picture">
-    </center>
-</main>
+        <br><br>
+<span id="msg" style="margin-left: 10px"><a href="../games">Games</a> > <strong><a href="#">Among Us</a></strong></span>
+    </nav>
+    <main>
+<div class="center">
+<h1>Choose a minigame</h1>
+<ul>
+    <a href="among_us/hide_n_seek">• Hide-n-seek</a>
+    <br>
+    <a href="among_us/shift_n_seek">• Shift-n-seek</a>
+</ul>
+    </div>
+    </main>
 </body>
 </html>

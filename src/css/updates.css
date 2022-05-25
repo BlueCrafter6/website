@@ -1,135 +1,89 @@
 :root {
-    --main-colour: #00a5ce;
-    --secondary-colour: #1f73ac;
-  }
+    --colour-primary: #0084ff;
+    --colour-secondary: #1952cc;
+   }
+   
+   body {
+       margin: 0;
+       font-family: 'Segoe UI', Verdana, Tahoma, sans-serif;
+   }
+   
+   .nav__ul {
+       padding: 10px;
+       list-style: none;
+       display: flex;
+       position: fixed;
+       margin: 0;
+       padding-left: 0;
+       width: 100rem;
+   background: #f0f0f0;
+   }
+   
+   .nav__li {
+       margin-right: 20px;
+   }
+   
+   .nav__a {
+       padding: 10px 16px;
+       text-decoration: none;
+       color: #000000;
+       border-radius: 100px;
+   }
+   
+   .nav__a:hover {
+       transition: ease 200ms;
+       color: #ffffff;
+       background: var(--colour-primary);
+   }
+   
+   .nav__a.current {
+       color: #ffffff;
+       background: var(--colour-secondary);
+   }
+   
+   /************************************************/
+   
+   main {
+       margin-left: 10px;
+   }
+   
+   .center {
+       text-align: -webkit-center;
+   }
+   
+   .line__short {
+       line-height: 15px;
+   }
+   
+   /************************************************/
+   
+   .sun {
+       display: none;
+   }
+   
+   .m-dark {
+       background: #000000;
+       color: #ffffff;
+   } 
+   
+   .m-dark .nav__ul {
+       background: #2e2e2e;
+   }
+   
+   .m-dark .nav__a {
+       color: #ffffff;
+   }
 
-a {
-text-decoration: none;
-color: inherit;
-}
+/************************************************/
 
-body {
-    margin: 0;
-    background: black;
-    color: white;
-    font-family: 'Segoe UI';
-}
-
-::-webkit-scrollbar {
-    width: 0.50rem;
-  }
-  
-  ::-webkit-scrollbar-thumb {
-    background: var(--main-colour);
-  }
-
-  .nav__links {
-    list-style: none;
-    display: flex;
-    float: right;
-  }
-  
-  .nav__links a,
-  .cta,
-  .overlay__content a {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 500;
-    text-decoration: none;
-    cursor: pointer;
-  }
-  
-  .nav__links li {
-    padding: 0px 20px;
-  }
-  
-  .nav__links li a {
-    transition: all 0.3s ease 0s;
-  }
-  
-  .nav__links li a:hover {
-    color: #0088a9;
-  }
-  
-  .current {
-    padding: 9px 25px;
-    background-color: rgba(0, 136, 169, 1);
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-    color: #ffffff;
-  }
-  
-  .current:hover {
-    background-color: rgba(0, 136, 169, 0.8);
-  }
-
-  .nav__links__mobile {
-    list-style: none;
-    float: right;
-    display: none;
-    padding-left: 100%;
-  }
-  
-  .nav__links__mobile a,
-  .overlay__content a {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 500;
-    text-decoration: none;
-    cursor: pointer;
-  }
-  
-  .nav__links__mobile li {
-    padding: 0px 20px 5px;
-  }
-  
-  .nav__links__mobile li a {
-    transition: all 0.3s ease 0s;
-  }
-  
-  .nav__links__mobile li a:hover {
-    color: #0088a9;
-  }
-
-  .current_mobile {
-    background: #0088a9;
-    padding: 3px;
-  }
-
-  #sun {
-    width: 20px;
-    margin-top: 2px;
-  }
-  
-  #moon {
-    width: 20px;
-    margin-top: 2px;
-  }
-  
-  #moon_a {
-    display: none;
-  }
-  
-  #moon_a_mobile {
-    display: none;
-  }
-
-  main {
-      margin: 1%;
-  }
-  
-  .darkmode {
-    background: white;
-    color: #000000;
-    transition: ease-in-out 200ms;
-  }
-
-  @media (max-width: 590px) { /*Navbar*/
-    .nav__links {
-      display: none;
+   @media (max-width: 429px) {
+    main {
+        margin-top: 200px;
     }
-  
-    .nav__links__mobile {
-      display: block;
+    .nav__ul {
+        flex-direction: column;
     }
-  }
+    .nav__li {
+        margin-bottom: 15px;
+    }
+}

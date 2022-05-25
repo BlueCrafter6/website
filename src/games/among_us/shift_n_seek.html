@@ -4,104 +4,83 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Games > Among Us > Shift-n-seek</title>
-<link rel="stylesheet" href="../../css/shiftnseek.css">
+<title>Games | Blue Crafter Website</title>
+<link rel="stylesheet" href="css/sns.css">
 <link rel="icon" href="../../img/normal_logo.ico">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
-integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
-crossorigin="anonymous" referrerpolicy="no-referrer">
-<script defer src="../../app.js"></script>
+<script src="../../js/fa.js"></script>
+<script defer src="../../js/app.js"></script>
 </head>
 <body>
     <nav>
-        <ul class="nav__links">
-            <li><a href="../among_us"><i class="fa-solid fa-angle-left"></i> Back</a></li>
-            <li><a href="../../home">Home</a></li>
-            <li><a href="../../follow">Follow</a></li>
-            <li><a href="../../updates">Updates</a></li>
-            <li><a href="../../about">About</a></li>
-            <li><a href="../../games" class="current">Games</a></li>
-            <div>
-                <li><a onclick="toggleA()" id="sun_a"><i class="fa-solid fa-sun"></i> Light Mode</a></li>
-                <li><a onclick="toggleB()" id="moon_a"><i class="fa-solid fa-moon"></i> Dark Mode</a></li>
-            </div>
+        <ul class="nav__ul">
+            <li class="nav__li"><a href="../../index" class="nav__a">Home</a></li>
+            <li class="nav__li"><a href="../../follow" class="nav__a">Follow</a></li>
+            <li class="nav__li"><a href="../../updates" class="nav__a">Updates</a></li>
+            <li class="nav__li"><a href="../../about" class="nav__a">About</a></li>
+            <li class="nav__li"><a href="#" class="nav__a current">Games > ...</a></li>
+            <li class="nav__li sun"><a href="#" class="nav__a" onclick="lightMode()"><i class="fa-solid fa-sun"></i></a></li>
+            <li class="nav__li moon"><a href="#" class="nav__a" onclick="darkMode()"><i class="fa-solid fa-moon"></i></a></li>
         </ul>
-        <ul class="nav__links__mobile">
-            <li><a href="../among_us"><i class="fa-solid fa-angle-left"></i> Back</a></li>
-            <li><a href="../../home">Home</a></li>
-            <li><a href="../../follow">Follow</a></li>
-            <li><a href="../../updates">Updates</a></li>
-            <li><a href="../../about">About</a></li>
-            <li><a href="../../games" class="current_mobile"><b>Games</b></a></li>
-            <div>
-                <li><a onclick="toggleAM()" id="sun_a_mobile"><i class="fa-solid fa-sun"></i></a></li>
-                <li><a onclick="toggleBM()" id="moon_a_mobile"><i class="fa-solid fa-moon"></i></a></li>
-            </div>
-        </ul>
-    </nav>
+        <br><br>
+        <a href="#"><span style="margin-left: 10px"><a href="../../games">Games</a> > <a href="../among_us">Among Us</a> > <strong><a href="#">Shift-n-seek</a></strong></span></a>
+    
 <main>
-    <br><br><br>
-<center>
-    <h1>Shift-n-seek</h1>
-    <p>An unofficial Among Us minigame</p>
-    <br>
-</center>
-<div class="rules">
-<h2>Rules of Shift-n-seek</h2>
-<ol class="rules">
-    <li>No venting, sabotaging, reporting bodies or calling emergency meetings</li>
-<li>No camping</li>
-<li>Do tasks</li>
-<li>Report cheaters and rule-breakers to the host after the round</li>
-<h3>Imposter Rules</h3>
-<ol>
-    <li>Imposter(s) must vent at the start of each game</li>
-    <li>Shift to the person you want to kill</li>
-    <li>If you killed a crewmate that you didn't shift to, stand on the body for <strong>15 sec</strong></li>
-</ol>
-</ol>
-</div>
-<div class="right setup">
-    <h2>How to setup a Hide-n-seek lobby?</h2>
-            <ul class="settings">
-                <li>Map: Custom</li>
-                <li>Imposters: Custom</li>
-                <li>Emergency:</li>
-                <ul class="inner_ul">
-                    <li>Meetings: 0</li>
-                    <li>Cooldown: 0s</li>
-                </ul>
-                <li>Discussion Time: 0s</li>
-                <li>Player Speed: 1,5x</li>
-                <li>Vision:</li>
-                <ul class="inner_ul">
-                    <li>Crewmate: 5,0x</li>
-                    <li>Imposter: 0,25x</li>
-                </ul>
-                <li>Kill:</li>
-                <ul class="inner_ul">
-                    <li>Cooldown: 15,0s</li>
-                    <li>Distance: Medium</li>
-                </ul>
-                <li>Visual Tasks: <span class="green">&check;</span></li>
-                <li>Taskbar Updates: Always</li>
-                <li>Tasks:</li>
-                <ul class="inner_ul">
-                    <li>Common: 1</li>
-                    <li>Long: 1</li>
-                    <li>Short: 2</li>
-                </ul>
-                <h3>Role settings</h3>
-                <li>Shapeshifter: {Imposter Amount} with 100% chance</li>
-                <li>Engineer: 0 with 0% chance</li>
-                <li>Guardian Angel: 0 with 0% chance</li>
-                <li>Scientist: 0 with 0% chance</li>
-            </ul>
-</div>
-<div class="how_to_play">
-    <h2>How to play Shift-n-seek?</h2>
-    <p>Shift-n-seek is similar to <a href="hide_n_seek.html" class="link_1">Hide-n-seek</a> with a few changes. In Shift-n-seek, you still have to hide from seeker(s) (imposter(s)), but for the seeker(s) to seek you, they need to morph into you.</p>
-</div>
-</main>
+        <div class="rules">
+        <h2>Rules of Shift-n-seek</h2>
+        <ol class="rules">
+            <li>No venting, sabotaging, reporting bodies or calling emergency meetings</li>
+        <li>No camping</li>
+        <li>Do tasks</li>
+        <li>Report cheaters and rule-breakers to the host after the round</li>
+        <h3>Imposter Rules</h3>
+        <ol>
+            <li>Imposter(s) must vent at the start of each game</li>
+            <li>Shift to the person you want to kill</li>
+            <li>If you killed a crewmate that you didn't shift to, stand on the body for <strong>15 sec</strong></li>
+        </ol>
+        </ol>
+        </div>
+        <div class="right setup">
+            <h2>How to setup a Hide-n-seek lobby?</h2>
+                    <ul class="settings">
+                        <li>Map: Custom</li>
+                        <li>Imposters: Custom</li>
+                        <li>Emergency:</li>
+                        <ul class="inner_ul">
+                            <li>Meetings: 0</li>
+                            <li>Cooldown: 0s</li>
+                        </ul>
+                        <li>Discussion Time: 0s</li>
+                        <li>Player Speed: 1,5x</li>
+                        <li>Vision:</li>
+                        <ul class="inner_ul">
+                            <li>Crewmate: 5,0x</li>
+                            <li>Imposter: 0,25x</li>
+                        </ul>
+                        <li>Kill:</li>
+                        <ul class="inner_ul">
+                            <li>Cooldown: 15,0s</li>
+                            <li>Distance: Medium</li>
+                        </ul>
+                        <li>Visual Tasks: <span class="green">✓</span></li>
+                        <li>Taskbar Updates: Always</li>
+                        <li>Tasks:</li>
+                        <ul class="inner_ul">
+                            <li>Common: 1</li>
+                            <li>Long: 1</li>
+                            <li>Short: 2</li>
+                        </ul>
+                        <h3>Role settings</h3>
+                        <li>Shapeshifter: {Imposter Amount} with 100% chance</li>
+                        <li>Engineer: 0 with 0% chance</li>
+                        <li>Guardian Angel: 0 with 0% chance</li>
+                        <li>Scientist: 0 with 0% chance</li>
+                    </ul>
+        </div>
+        <div class="how_to_play">
+            <h2>How to play Shift-n-seek?</h2>
+            <p>Shift-n-seek is similar to <a href="hide_n_seek" class="link_1">Hide-n-seek</a> with a few changes. In Shift-n-seek, you still have to hide from seeker(s) (imposter(s)), but for the seeker(s) to seek you, they need to morph into you.</p>
+        </div>
+        </main>
 </body>
 </html>

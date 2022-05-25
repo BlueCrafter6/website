@@ -1,0 +1,37 @@
+body {
+    font-family: 'Segoe UI', Verdana, Tahoma, sans-serif;
+}
+
+.center {
+    text-align: -webkit-center;
+}
+
+.line__short {
+    line-height: 15px;
+}
+
+.fa-github {
+    color: #000000;
+}
+
+.m-dark {
+    background: #000000;
+    color: #ffffff;
+} 
+
+.m-dark .fa-github {
+    color: #ffffff;
+}
+
+
+@keyframes disappear {
+    from {
+        opacity: 1.00;
+        display: block;
+    }
+
+    to {
+        opacity: 0.00;
+        display: none;
+    }
+}

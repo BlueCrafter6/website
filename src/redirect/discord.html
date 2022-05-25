@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Redirect | Discord</title>
+<link rel="stylesheet" href="css/global.css">
+<link rel="icon" href="img/loading.svg">
+<script defer src="js/global.js"></script>
+<script src="../js/fa.js"></script>
+</head>
+<body>
+<div class="center line__short">
+    <img src="img/loading.svg">
+    <h1>Redirecting&hellip;</h1>
+    <p><i class="fa-brands fa-discord"></i> Discord</p>
+<p id="msg" style="display: none; text-decoration: underline;">The Discord server was deleted due to lack of popularity.  R.I.P. "The Bluenation"</p>
+</div>
+<script async>
+    const sleep = (ms) => {
+        return new Promise(r => setTimeout(r, ms))
+    }
+window.onload = async function() {
+await sleep(1000)
+const h1 = document.querySelector('h1')
+const p = document.querySelector('p')
+const img = document.querySelector('img')
+const msg = document.getElementById('msg')
+h1.innerHTML = "Wait..."
+p.innerHTML = "There is no Discord link?"
+img.style.animation = 'disappear 1s'
+await sleep(1000)
+img.style.display = "none"
+msg.style.display = "block"
+await sleep(3000)
+history.back()
+}
+</script>
+</body>
+</html>

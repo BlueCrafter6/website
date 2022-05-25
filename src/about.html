@@ -4,63 +4,46 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>About | Blue Crafter</title>
+<title>About | Blue Crafter Website</title>
 <link rel="stylesheet" href="css/about.css">
 <link rel="icon" href="img/normal_logo.ico">
-<script defer src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.25.0/axios.min.js" integrity="sha512-/Q6t3CASm04EliI1QyIDAA/nDo9R8FQ/BULoUFyN4n/BDdyIxeH7u++Z+eobdmr11gG5D/6nPFyDlnisDwhpYA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script defer src="app.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
-        integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script src="js/fa.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script defer src="js/app.js"></script>
+<script src="js/counter.js"></script>
 </head>
 <body>
     <nav>
-        <ul class="nav__links">
-            <li><a href="home">Home</a></li>
-            <li><a href="follow">Follow</a></li>
-            <li><a href="updates">Updates</a></li>
-            <li><a href="about" class="current">About</a></li>
-            <li><a href="games">Games</a></li>
-            <div>
-                <li><a onclick="toggleA()" id="sun_a"><i class="fa-solid fa-sun"></i> Light Mode</a></li>
-                <li><a onclick="toggleB()" id="moon_a"><i class="fa-solid fa-moon"></i> Dark Mode</a></li>
-            </div>
+        <ul class="nav__ul">
+            <li class="nav__li"><a href="index" class="nav__a">Home</a></li>
+            <li class="nav__li"><a href="follow" class="nav__a">Follow</a></li>
+            <li class="nav__li"><a href="updates" class="nav__a">Updates</a></li>
+            <li class="nav__li"><a href="#" class="nav__a current">About</a></li>
+            <li class="nav__li"><a href="games" class="nav__a">Games</a></li>
+            <li class="nav__li sun"><a href="#" class="nav__a" onclick="lightMode()"><i class="fa-solid fa-sun"></i></a></li>
+            <li class="nav__li moon"><a href="#" class="nav__a" onclick="darkMode()"><i class="fa-solid fa-moon"></i></a></li>
         </ul>
-        <ul class="nav__links__mobile">
-            <li><a href="home">Home</a></li>
-            <li><a href="follow">Follow</a></li>
-            <li><a href="updates">Updates</a></li>
-            <li><a href="" class="current_mobile"><b>About</b></a></li>
-            <li><a href="games">Games</a></li>
-            <div>
-                <li><a onclick="toggleAM()" id="sun_a_mobile"><i class="fa-solid fa-sun"></i></a></li>
-                <li><a onclick="toggleBM()" id="moon_a_mobile"><i class="fa-solid fa-moon"></i></a></li>
-            </div>
-        </ul>
-</nav>
+    </nav>
+    <br><br><br>
+    <main>
+        <div class="center">
+<img src="img/normal_logo_display.png" alt="logo">
+<div class="line__short">
+<h1>Blue Crafter</h1>
+<p id="msg">"Once a dream, now a reality"</p>
+</div>
+</div>
 <br>
-<main>
-    <h1>About Blue Crafter</h1>
-    <p>Learn everything about the channels history</p>
-
-    <ul class="navigation">
-        <li><a href="#how-i-started">How I started</a></li>
-        <li><a href="#today">I am today</a></li>
-        <li><a href="#inspirations">Inspirations</a></li>
-    </ul>
-
-    <h1 id="how-i-started">How I started</h1>
-    <p>It was 2020 and I was bored and stuck in my house with nothing to do. Then, I was watching some videos on YouTube and idea popped in my mind<br><center><em id="quote">"Why don't I become a YouTuber?"</em></center><br>I started off in the spare room of my house with my phone being held up with cupboard pulling things recording a TV with my tablets screen on it. That wasn't working out so I went to my dad for some advice. He told me to use a screen recorder.<br><center>Remember:<br>I knew NOTHING about screen recorders and stuff like that</center><br>Then I shot a couple of EXTREMELY BAD videos. Then I asked my uncles for some advice, they told me that I should use an editor. I looked for one and fell in love with it immediatly. I was then ready to publish videos to YouTube (well not yet). I asked my dad if I can publish it and he said yes. I got so excited and went to my tablet to film a video. I hopped onto YouTube Studio and uploaded it there. This was <a href="links/first-video" target="_blank" id="first-vid">my first video</a>. It got a decent amount of views over the weeks and I uploaded video after video. For my birthday in May, I got an Arduino kit. This was when I made my second channel. Check that story out <a href="links/second-channel-about" id="blue2c-abt" target="_blank">here</a>.
-</p>
-<h1 id="today">Where I am today</h1>
-<p>I am at <strong><span class="sub-count" id="sub-count">0</span></strong> subscribers/awesome people (:D) with <strong><span class="video-count" id="video-count">0</span></strong> videos published and have a total of <strong><span class="view-count" id="view-count">0</span> </strong>channel views</p>
-<h1 id="inspirations">My Inspirations</h1>
-<p>These are the people that have inspired me to made this channel. Go check them out!</p>
-    <ul class="inspiration">
-        <li><a href="links/inspirations/psychogirlgamer" target="blank">PsychoGirlGamer</a></li>
-        <li><a href="links/inspirations/eystreem"target="blank">Eystreem</a></li>
-        <li><a href="links/inspirations/wadzee" target="blank">Wadzee</a></li>
-    </ul>
-</main>
+<p>The story of this <a href="redirect/youtube" class="link youtube" target="_blank"><i class="fa-brands fa-youtube"></i> YouTube Channel <i class="fa-solid fa-arrow-up-right-from-square"></i></a> starts from way back in 2020, everyone's, agreeably, most hated year. I was sitting at home having no idea what to do. I watched <a href="#"><i class="fa-solid fa-clock"></i></a> hours of <a href="https://youtube.com" class="youtube link" target="_blank"><i class="fa-brands fa-youtube"></i> YouTube <i class="fa-solid fa-arrow-up-right-from-square"></i></a>. Finally, something sparked in my head. I wanted to become a <a href="#" class="link youtuber"><i class="fa-solid fa-clapperboard-play"></i></a> YouTuber. </p>
+<br>
+<p>I got out whatever was lying around and made some good use of those stuff. I never uploaded in 2020, 2021 was when I officially started. I made my <a href="https://www.youtube.com/watch?v=1xOhQqsv4Yg" class="link" target="_blank">first video <i class="fa-solid fa-arrow-up-right-from-square"></i></a>, edited and published it. In 2021, I had lots of time to record so I could upload consistently. 2022 is where I am taking a huge drop in uploading consistenly because of school.</p>
+<br>
+<h2>Stats</h2>
+<ul>
+    <li>Subscribers: <b><span id="sub-count"><i class="fa-solid fa-spinner"></i> Loading</span></b></li>
+    <li>Videos Uploaded: <b><span id="video-count"><i class="fa-solid fa-spinner"></i> Loading</span></b></li>
+    <li>Channel Views: <b><span id="view-count"><i class="fa-solid fa-spinner"></i> Loading</span></b></li>
+</ul>
+    </main>
 </body>
 </html>
